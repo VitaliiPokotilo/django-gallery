@@ -9,6 +9,8 @@ def gallery_view(request):
 
 
 
+
+//
 def image_detail(request, image_id):
     image = get_object_or_404(Image, id=image_id)
     return render(request, 'image_detail.html', {'image': image})
